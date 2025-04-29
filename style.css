@@ -1,140 +1,137 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-/* Global Styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
-    color: #333;
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.8;
+    box-sizing: border-box;
 }
 
-/* Navigation */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #ffffff);
+    color: #222;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Layout Containers */
+section {
+    padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 6vw, 6rem);
+    max-width: 1200px;
+    margin: auto;
+}
+
 nav {
-    background-color: #004080;
-    padding: 15px 0;
+    background: #002244;
+    padding: 1rem 2rem;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #7bc5f4;
 }
 
-nav ul li a:hover {
-    color: #cce6ff;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
+    padding: 4rem 2rem;
     text-align: center;
-    padding: 80px 20px 60px;
 }
-
 .hero h1 {
-    font-size: 2.8em;
-    color: #004080;
+    font-size: clamp(2.2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: #002244;
 }
-
 .hero span {
     color: #0066cc;
 }
-
 .hero p {
-    font-size: 1.2em;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
     color: #444;
 }
 
-/* Section Headings */
+/* Headings */
 h2 {
+    font-size: 2rem;
+    color: #003366;
     text-align: center;
-    font-size: 2.2em;
-    margin: 40px 0 20px;
-    position: relative;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #0066cc;
     display: inline-block;
-    border-bottom: 3px solid #004080;
-    animation: slideIn 1s ease forwards;
-}
-
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Content Section Layouts */
-section {
-    padding: 40px 60px;
+    padding-bottom: 0.5rem;
 }
 
 /* About Section */
 .about-content {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
-    border: 4px solid #004080;
+    border: 3px solid #0066cc;
     object-fit: cover;
-    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-/* Project & Blog Cards */
+/* Project and Blog Cards */
 .project, article {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(6px);
     border-radius: 12px;
-    padding: 25px;
-    margin: 30px 0;
-    border-left: 6px solid #0066cc;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid #007acc;
 }
 .project:hover, article:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
-
 .project h3, article h3 {
-    margin-top: 0;
+    margin-bottom: 0.5rem;
     color: #004080;
 }
 
 /* Resume Section */
 #resume a {
     display: inline-block;
-    background: #004080;
-    color: #fff;
-    padding: 12px 24px;
+    background-color: #004080;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 #resume a:hover {
-    background: #0066cc;
-    box-shadow: 0 0 12px #007bffb0;
+    background-color: #0066cc;
+    box-shadow: 0 0 10px rgba(0, 102, 204, 0.5);
 }
 
-/* Contact Section */
+/* Contact */
 #contact a {
     color: #0066cc;
     text-decoration: none;
@@ -145,9 +142,9 @@ section {
 
 /* Footer */
 footer {
+    background-color: #f0f4f8;
     text-align: center;
-    padding: 20px;
-    background: #e6f0ff;
-    color: #444;
-    font-size: 0.9em;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #555;
 }
