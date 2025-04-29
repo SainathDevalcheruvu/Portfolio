@@ -118,8 +118,8 @@ nav a:hover {
     color: #000;
 }
 
-.hero span {
-    color: #dc143c; /* Changed to Crimson */
+.hero h1 span {
+    color: #dc143c !important; /* Increased specificity and ensured with !important */
 }
 
 .hero p {
