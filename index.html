@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LB8HL2CG60"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,7 +8,6 @@
       gtag('js', new Date());
       gtag('config', 'G-LB8HL2CG60');
     </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sainath Devalcheruvu</title>
@@ -17,6 +15,7 @@
 </head>
 <body>
 <nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -26,48 +25,40 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-
 <section id="home">
     <div class="hero">
         <h1>Hello, I'm <span>Sainath Devalcheruvu</span></h1>
         <p>Computer Science Graduate Student | Systems Engineer | Cloud Enthusiast</p>
     </div>
 </section>
-
 <section id="about">
     <h2>About Me</h2>
     <div class="about-content">
-        <img src="profile.jpg" alt="Sainath's Photo" class="profile-pic">
+        <img src="profile.jpg" alt="Sainath's Photo" class="profile-pic" loading="lazy">
         <p>I'm a Master's student in Computer Science at the University of South Dakota with hands-on experience as a Systems Engineer at Tata Consultancy Services. I specialize in Oracle database management, cloud infrastructure on AWS and Azure, Linux server administration, and IT service management. Outside of tech, I enjoy cricket, volleyball, and contributing to community service initiatives.</p>
     </div>
 </section>
-
 <section id="portfolio">
     <h2>Portfolio</h2>
-
     <div class="project">
         <h3>Fake News Detection Using Machine Learning</h3>
         <p><strong>Technologies Used:</strong> Python, Scikit-learn, Pandas, Natural Language Processing (NLP), Flask</p>
         <p><strong>Description:</strong> Built a fake news detection system capable of classifying news articles as genuine or misleading. Implemented text preprocessing (tokenization, stemming, stopword removal) and feature extraction (TF-IDF). Evaluated various machine learning models and deployed the best model using a lightweight Flask application.</p>
         <p><strong>Key Contributions:</strong> Data collection and cleaning, feature engineering, model training and optimization, Flask API development for model deployment, and final model validation achieving 92% accuracy.</p>
     </div>
-
     <div class="project">
         <h3>Database Cloning Automation</h3>
         <p><strong>Technologies Used:</strong> Oracle 11g/12c, Shell Scripting, EXPDP/IMPDP Utilities, RMAN Backup, Crontab</p>
         <p><strong>Description:</strong> Designed an automation framework for database cloning across production and development environments. Enabled streamlined refreshes for UAT and SIT environments with significantly reduced downtime, ensuring consistent copies for testing and development purposes.</p>
         <p><strong>Key Contributions:</strong> Scripted full and incremental backup operations, automated export/import jobs, scheduled cloning processes via Crontab, and implemented monitoring scripts for error alerts. Reduced cloning time by 40% and manual intervention by 90%.</p>
     </div>
-
     <div class="project">
         <h3>Enterprise Cloud Migration Project</h3>
         <p><strong>Technologies Used:</strong> AWS EC2, AWS RDS, S3, CloudWatch, IAM, Azure DevOps (basic exposure)</p>
         <p><strong>Description:</strong> Contributed to the migration of an enterprise resource planning (ERP) platform and associated databases to AWS Cloud. Focused on cloud infrastructure provisioning, performance tuning, access security management, and post-migration testing to ensure seamless application functionality.</p>
         <p><strong>Key Contributions:</strong> Provisioned AWS EC2 instances, set up RDS for Oracle databases, configured IAM roles/policies, scripted S3 backups, monitored resource health using CloudWatch, and assisted in basic CI/CD pipeline creation through Azure DevOps.</p>
     </div>
-
 </section>
-
 <section id="blog">
     <h2>Blog / Reflection</h2>
     <article>
@@ -83,7 +74,6 @@
         <p>Organizing a 2000+ participant fest taught me critical leadership and project management skills that I apply in technology projects today.</p>
     </article>
 </section>
-
 <section id="resume">
     <h2>Resume</h2>
     <p><a href="Sainath_D_Resume-2.pdf" download>Download My Resume (PDF)</a></p>
@@ -94,16 +84,17 @@
         <li><strong>Awards:</strong> Quarter Performer Award (TCS), Best Team Award (TCS)</li>
     </ul>
 </section>
-
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:Sainath.Devalcheruvu@coyotes.usd.edu">Sainath.Devalcheruvu@coyotes.usd.edu</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/sainath-d-62b155197/" target="_blank">linkedin.com/in/sainath-d-62b155197/</a></p>
     <p>GitHub: <a href="https://github.com/SainathDevalcheruvu" target="_blank">github.com/SainathDevalcheruvu</a></p>
 </section>
-
 <footer>
     <p>© 2025 Sainath Devalcheruvu | Built with dedication and creativity.</p>
 </footer>
+<button id="dark-mode-toggle">🌙</button>
+<button id="back-to-top">↑</button>
+<script src="script.js"></script>
 </body>
 </html>
