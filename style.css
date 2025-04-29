@@ -115,17 +115,17 @@ nav a:hover {
 .hero h1 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 700;
-    color: #000; /* Changed to black */
+    color: #000;
 }
 
 .hero span {
-    color: #ffd700; /* Yellow for the name */
+    color: #dc143c; /* Changed to Crimson */
 }
 
 .hero p {
     font-size: clamp(0.8rem, 1.2vw, 0.9rem);
     margin-top: 0.3rem;
-    color: #666; /* Light gray for the subtitle */
+    color: #666;
 }
 
 h2 {
