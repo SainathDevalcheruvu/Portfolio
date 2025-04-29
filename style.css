@@ -29,20 +29,20 @@ body {
     font-family: 'Inter', sans-serif;
     background: linear-gradient(135deg, var(--bg-color), #ffffff);
     color: var(--text-color);
-    line-height: 1.7;
-    font-size: clamp(16px, 2.5vw, 18px);
+    line-height: 1.6;
+    font-size: 16px;
     scroll-behavior: smooth;
 }
 
 section {
-    padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 7rem);
-    max-width: 1400px;
+    padding: clamp(2rem, 4vw, 3rem) clamp(1rem, 4vw, 5rem);
+    max-width: 1200px;
     margin: auto;
 }
 
 nav {
     background: var(--primary-color);
-    padding: 1.2rem 2rem;
+    padding: 1rem 2rem;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -54,14 +54,14 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: clamp(1.5rem, 3vw, 2.5rem);
+    gap: clamp(1rem, 2vw, 1.5rem);
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: 600;
-    font-size: clamp(14px, 2vw, 16px);
+    font-size: 14px;
     transition: var(--transition);
 }
 
@@ -72,7 +72,7 @@ nav a:hover {
 
 .nav-toggle {
     display: none;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: white;
     background: none;
     border: none;
@@ -84,7 +84,7 @@ nav a:hover {
         display: block;
         position: absolute;
         right: 2rem;
-        top: 1.5rem;
+        top: 1.2rem;
     }
     nav ul {
         display: none;
@@ -94,20 +94,20 @@ nav a:hover {
         top: 100%;
         left: 0;
         width: 100%;
-        padding: 1rem;
+        padding: 0.5rem;
         box-shadow: var(--shadow);
     }
     nav ul.active {
         display: flex;
     }
     nav a {
-        padding: 0.75rem;
-        font-size: 1.1rem;
+        padding: 0.5rem;
+        font-size: 1rem;
     }
 }
 
 .hero {
-    padding: clamp(5rem, 10vw, 8rem) 2rem;
+    padding: clamp(3rem, 6vw, 4rem) 1rem;
     text-align: center;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: white;
@@ -127,7 +127,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 700;
     position: relative;
     z-index: 1;
@@ -139,8 +139,8 @@ nav a:hover {
 }
 
 .hero p {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    margin-top: 1rem;
+    font-size: clamp(0.9rem, 1.5vw, 1rem);
+    margin-top: 0.5rem;
     position: relative;
     z-index: 1;
     animation: fadeInUp 1.2s ease-out;
@@ -158,20 +158,20 @@ nav a:hover {
 }
 
 h2 {
-    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 3vw, 2rem);
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     position: relative;
 }
 
 h2::after {
     content: '';
     position: absolute;
-    bottom: -0.5rem;
+    bottom: -0.3rem;
     left: 50%;
-    width: 60px;
-    height: 3px;
+    width: 40px;
+    height: 2px;
     background: var(--accent-color);
     transform: translateX(-50%);
 }
@@ -180,16 +180,16 @@ h2::after {
     display: grid;
     grid-template-columns: 1fr 3fr;
     align-items: center;
-    gap: 2.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 4px solid var(--accent-color);
+    border: 3px solid var(--accent-color);
     object-fit: cover;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -207,47 +207,42 @@ h2::after {
 }
 
 #portfolio, #blog {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    display: block;
 }
 
 .project, article {
-    background: var(--card-bg);
-    backdrop-filter: blur(8px);
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-    border-left: 5px solid var(--accent-color);
-}
-
-.project:hover, article:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border-radius: 0;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    border-left: none;
+    transition: none;
 }
 
 .project h3, article h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--primary-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.3rem;
 }
 
 .project p, article p {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--text-color);
+    margin: 0.2rem 0;
 }
 
 #resume a {
     display: inline-block;
     background: var(--primary-color);
     color: white;
-    padding: 0.9rem 2rem;
+    padding: 0.6rem 1.2rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 600;
+    font-size: 0.9rem;
     transition: var(--transition);
-    margin: 1.5rem 0;
+    margin: 1rem 0;
 }
 
 #resume a:hover {
@@ -258,12 +253,22 @@ h2::after {
 
 #resume ul {
     list-style: none;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 #resume li {
-    margin-bottom: 0.75rem;
-    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+#contact p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+#contact i {
+    margin-right: 0.5rem;
+    color: var(--accent-color);
 }
 
 #contact a {
@@ -282,21 +287,21 @@ footer {
     background: var(--primary-color);
     color: white;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
+    padding: 1rem;
+    font-size: 0.85rem;
 }
 
 #dark-mode-toggle {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     background: var(--primary-color);
     color: white;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
     cursor: pointer;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -309,15 +314,15 @@ footer {
 
 #back-to-top {
     position: fixed;
-    bottom: 2rem;
-    right: 6rem;
+    bottom: 1.5rem;
+    right: 5rem;
     background: var(--primary-color);
     color: white;
     border: none;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    font-size: 1.2rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
     cursor: pointer;
     display: none;
     transition: var(--transition);
@@ -334,28 +339,25 @@ footer {
 
 @media (max-width: 768px) {
     section {
-        padding: 2rem 1rem;
+        padding: 1.5rem 0.5rem;
     }
     .hero {
-        padding: 3rem 1rem;
-    }
-    #portfolio, #blog {
-        grid-template-columns: 1fr;
+        padding: 2rem 0.5rem;
     }
     #back-to-top {
-        right: 2rem;
-        bottom: 6rem;
+        right: 1.5rem;
+        bottom: 5rem;
     }
 }
 
 @media (max-width: 480px) {
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
     }
     .hero h1 {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
-    .project, article {
-        padding: 1.5rem;
+    .project h3, article h3 {
+        font-size: 1.1rem;
     }
 }
