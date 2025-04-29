@@ -119,7 +119,7 @@ nav a:hover {
 }
 
 .hero h1 span {
-    color: #dc143c !important; /* Increased specificity and ensured with !important */
+    color: #50c878 !important; /* Changed to Emerald Green */
 }
 
 .hero p {
