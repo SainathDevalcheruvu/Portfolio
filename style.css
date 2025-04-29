@@ -107,17 +107,15 @@ nav a:hover {
 }
 
 .hero {
-    padding: clamp(2rem, 4vw, 3rem) 1rem;
-    text-align: center;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 1rem 0;
+    text-align: left;
+    background: none;
     color: white;
-    position: relative;
 }
 
 .hero h1 {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 700;
-    position: relative;
 }
 
 .hero span {
@@ -127,7 +125,6 @@ nav a:hover {
 .hero p {
     font-size: clamp(0.8rem, 1.2vw, 0.9rem);
     margin-top: 0.3rem;
-    position: relative;
 }
 
 h2 {
@@ -316,7 +313,7 @@ footer {
         padding: 1rem 0.5rem;
     }
     .hero {
-        padding: 1.5rem 0.5rem;
+        padding: 0.5rem 0;
     }
     #back-to-top {
         right: 1rem;
