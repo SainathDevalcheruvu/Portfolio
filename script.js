@@ -28,3 +28,23 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Modal functionality for resume preview
+const resumePreviewToggle = document.getElementById('resume-preview-toggle');
+const resumeModal = document.getElementById('resume-modal');
+const closeModal = document.getElementById('close-modal');
+
+resumePreviewToggle.addEventListener('click', () => {
+    resumeModal.style.display = 'flex';
+});
+
+closeModal.addEventListener('click', () => {
+    resumeModal.style.display = 'none';
+});
+
+// Close modal when clicking outside the modal content
+window.addEventListener('click', (event) => {
+    if (event.target === resumeModal) {
+        resumeModal.style.display = 'none';
+    }
+});
