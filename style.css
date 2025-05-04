@@ -214,7 +214,7 @@ h2::after {
     background: var(--primary-color); /* #002244, matches the image */
     color: white;
     padding: 0.5rem 1.5rem; /* Adjusted padding for better proportions */
-    border-radius: 10px; /* Matches the image */
+    border-radius: 25px; /* Matches the image */
     text-decoration: none;
     font-weight: 600;
     font-size: 0.85rem;
