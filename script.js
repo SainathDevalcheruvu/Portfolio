@@ -35,5 +35,5 @@ const resumePreview = document.getElementById('resume-preview');
 resumePreviewToggle.addEventListener('click', () => {
     const isVisible = resumePreview.style.display === 'block';
     resumePreview.style.display = isVisible ? 'none' : 'block';
-    resumePreviewToggle.textContent = isVisible ? 'Preview' : 'Hide Preview';
+    resumePreviewToggle.textContent = isVisible ? 'Preview Resume' : 'Hide Resume';
 });
