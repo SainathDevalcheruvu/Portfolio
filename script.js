@@ -28,3 +28,12 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+// Added functionality for resume preview toggle
+const resumePreviewToggle = document.getElementById('resume-preview-toggle');
+const resumePreview = document.getElementById('resume-preview');
+resumePreviewToggle.addEventListener('click', () => {
+    const isVisible = resumePreview.style.display === 'block';
+    resumePreview.style.display = isVisible ? 'none' : 'block';
+    resumePreviewToggle.textContent = isVisible ? 'Preview' : 'Hide Preview';
+});
