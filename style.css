@@ -203,21 +203,28 @@ h2::after {
     margin: 0.1rem 0;
 }
 
-#resume a {
-    display: inline-block;
-    background: var(--primary-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.85rem;
-    transition: var(--transition);
+.resume-buttons {
+    display: flex;
+    gap: 1rem;
     margin: 0.8rem 0;
 }
 
-#resume a:hover {
-    background: var(--accent-color);
+#resume a, .preview-button {
+    display: inline-block;
+    background: var(--accent-color); /* #0066cc, matches the image */
+    color: white;
+    padding: 0.5rem 1.5rem; /* Adjusted padding for better proportions */
+    border-radius: 10px; /* Reduced from 50px to match the image */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#resume a:hover, .preview-button:hover {
+    background: var(--primary-color); /* #002244, for hover effect */
     transform: translateY(-2px);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
@@ -232,18 +239,11 @@ h2::after {
     font-size: 0.9rem;
 }
 
-/* Added styles for resume preview */
-.resume-preview {
-    margin-bottom: 1rem;
+#resume-preview {
+    margin-top: 1rem;
 }
 
-.resume-preview h3 {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-}
-
-.resume-preview iframe {
+#resume-preview iframe {
     border-radius: 8px;
     box-shadow: var(--shadow);
 }
