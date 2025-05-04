@@ -157,8 +157,8 @@ h2::after {
 }
 
 .profile-pic {
-    width: 200px; /* Increased from 120px */
-    height: 200px; /* Increased from 120px */
+    width: 150px; /* Increased from 120px */
+    height: 150px; /* Increased from 120px */
     border-radius: 50%;
     border: 2px solid var(--accent-color);
     object-fit: cover;
@@ -237,15 +237,6 @@ h2::after {
 #resume li {
     margin-bottom: 0.3rem;
     font-size: 0.9rem;
-}
-
-#resume-preview {
-    margin-top: 1rem;
-}
-
-#resume-preview iframe {
-    border-radius: 8px;
-    box-shadow: var(--shadow);
 }
 
 #contact p {
